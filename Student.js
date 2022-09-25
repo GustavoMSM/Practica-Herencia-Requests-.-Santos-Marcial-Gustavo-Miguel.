@@ -1,15 +1,12 @@
 const Person = require("./Person");
 
 module.exports = class Alumno extends Person{
-    constructor(matricula, ApellidoP, ApellidoM,Carrera, Cuatrimestre,Turno){
+    constructor(matricula, Carrera, Cuatrimestre,Turno){
+        super();
         this.matricula= matricula;
         this.Carrera= Carrera;
         this.Cuatrimestre = Cuatrimestre;
         this.Turno= Turno;
-    }
-
-    super(){
-
     }
 
     getmatricula(){
